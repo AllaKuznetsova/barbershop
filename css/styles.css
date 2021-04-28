@@ -1,42 +1,13 @@
-/* Стили для Барбершопа */
-@font-face {
-  font-family: "Raleway";
-  font-weight: bold;
-  font-display: swap;
-  src: local("Raleway-Bold"),
-    url("../fonts/Raleway-Bold.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "OpenSans";
-  font-weight: 400;
-  font-display: swap;
-  src: local("OpenSans-Regular"),
-    url("../fonts/OpenSans-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "OpenSans";
-  font-weight: 600;
-  font-display: swap;
-  src: local("OpenSans-SemiBold"),
-    url("../fonts/OpenSans-SemiBold.ttf") format("truetype");
-}
-
-::root {
-  --color-white: #fff;
-  --color-dark: #303030;
-  --color-light-gray: #f7f7f7;
-  --color-gray: #555555;
-  --color-dark-gray: #9da4bd;
-  --color-orange: #ff6c00;
-  --color-dark-blue: #191c26;
-}
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 body {
@@ -44,4 +15,181 @@ body {
   line-height: 1.2;
   overflow-x: hidden;
   font-family: OpenSans, sans-serif;
+  font-size: 18px;
+  color: var(--color-dark);
 }
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.btn {
+  display: block;
+  width: 160px;
+  border: 1px solid var(--color-orange);
+  border-radius: 25px;
+  padding: 12px 0;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: transparent;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  cursor: pointer;
+}
+
+.text-white {
+  color: var(--color-white);
+}
+
+.text-grey {
+  color: var(--color-dark-gray);
+  opacity: 0.6;
+}
+
+.section-subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0 0 20px;
+}
+.section-subtitle::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: black;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.header {
+  background-color: var(--color-dark-blue); /* Врменное решение */
+  padding: 32px 0;
+}
+
+.header-logo {
+  margin-right: 72px;
+}
+
+.main-menu {
+  display: flex;
+}
+
+.main-menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.main-menu-link {
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.main-menu-link:hover {
+  color: var(--color-orange);
+}
+
+.header-phone-wrapper {
+  margin-right: 40px;
+}
+
+.header-phone {
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: var(--color-white);
+  text-decoration: none;
+  font-style: normal;
+}
+
+.header-phone:hover {
+  color: var(--color-orange);
+}
+.conteiner{
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.hero-section {
+  /* background: url("../images/hero-desktop-bg.png") no-repeat center/cover; */
+  background-image: url("../images/hero-desktop-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.main-title {
+  font-family: Raleway, sans-serif;
+  font-size: 72px;
+  letter-spacing: 0.05em;
+  color: var(--color-white);
+  margin: 0 0 20px;
+}
+
+.main-subtitle {
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+  font-size: 18px;
+  margin: 0;
+}
+
+.section-padding{
+  padding: 130px 0;
+}
+.master-section{
+  background-color: var(--color-light-gray);
+}
+.section-title{
+  font-family: Raleway;
+font-style: normal;
+font-weight: bold;
+font-size: 42px;
+line-height: 1.16;
+letter-spacing: 0.05em;
+}
+.master-title {
+  margin-bottom: 40px;
+}
+.masters-list { 
+  display: flex;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+}
+.master-item {
+  max-width: 33.3333%;
+  padding: 0 15px;
+  margin-bottom: ;
+ 
+}
+.img-responsive{
+max-width: 100%;
+height: auto;
+display: block;
+}
+
+.master-image{
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
